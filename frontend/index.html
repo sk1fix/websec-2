@@ -6,7 +6,7 @@
     <title>Погода</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=fb130d16-109c-464d-b992-45185a9a270f&lang=ru_RU"></script>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -17,8 +17,11 @@
 <body>
 
     <div id="container">
-
-        <!-- карта -->
+        <input type="text" id="search" placeholder="Введите город"
+            style="position:absolute; top:10px; left:10px; z-index:1001; width:300px; padding:5px;">
+        <div id="results"
+            style="position:absolute; top:40px; left:10px; z-index:1001; background:#fff; border-radius:5px; max-height:200px; overflow-y:auto;">
+        </div>
         <div id="map"></div>
 
         <div id="weatherPanel">

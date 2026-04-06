@@ -5,7 +5,6 @@ import json
 
 app = FastAPI()
 
-# CORS (чтобы фронт работал)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

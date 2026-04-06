@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Погода</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!-- карта -->
+        <div id="map"></div>
+
+        <div id="weatherPanel">
+            <button id="closeWeather">✖</button>
+
+            <canvas id="tempChart"></canvas>
+            <canvas id="precChart"></canvas>
+            <canvas id="windChart"></canvas>
+        </div>
+
+    </div>
+
+    <script src="js/charts.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
